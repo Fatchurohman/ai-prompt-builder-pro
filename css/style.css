@@ -1,0 +1,174 @@
+
+body{
+    background:#101820;
+    color:white;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    margin-top:80px;
+}
+
+h1{
+    color:#00e5ff;
+}
+
+p{
+    color:#cccccc;
+}
+h3{
+    color:#9ccfff;
+    font-weight:normal;
+    margin-top:-10px;
+}
+
+hr{
+    border:none;
+    height:2px;
+    background:#00e5ff;
+    margin-top:25px;
+}
+h2{
+    color:#00e5ff;
+    text-align:left;
+    margin-top:30px;
+}
+
+.card p{
+    text-align:left;
+    font-size:18px;
+    margin-left:20px;
+}
+label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    margin:12px 0;
+    cursor:pointer;
+}
+
+input[type="checkbox"]{
+    width:20px;
+    height:20px;
+}
+#generateBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    background:#00bcd4;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+#generateBtn:hover{
+
+    background:#0097a7;
+
+}
+#hasil{
+    margin-top:25px;
+    padding:20px;
+    background:#16212d;
+    border:1px solid #00bcd4;
+    border-radius:12px;
+    color:white;
+    text-align:left;
+    min-height:80px;
+    line-height:1.7;
+    font-size:18px;
+}
+#copyBtn{
+    margin-top:15px;
+    padding:10px 20px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+.genre-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:0;
+    width:100%;
+}
+/* ===========================
+   GENRE 2 KOLOM
+=========================== */
+
+#genreContainer{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:20px;
+    row-gap:6px;
+}
+#moodContainer{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    column-gap:20px;
+
+    row-gap:6px;
+
+}
+
+.mood-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:0;
+
+}
+#instrumentContainer{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    column-gap:20px;
+
+    row-gap:6px;
+
+}
+
+.instrument-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+#soundCharacterContainer{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    column-gap:20px;
+
+    row-gap:6px;
+
+}

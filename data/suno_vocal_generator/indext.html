@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suno Vocal Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎤 Suno Vocal Generator</h1>
+    <p>Design your professional vocal character</p>
+
+    <label>Gender</label>
+    <select id="gender">
+        <option value="male">Male Vocal</option>
+        <option value="female">Female Vocal</option>
+    </select>
+
+    <label>Voice Type</label>
+    <select id="type">
+        <option value="baritone">Baritone</option>
+        <option value="tenor">Tenor</option>
+        <option value="bass">Bass</option>
+        <option value="alto">Alto</option>
+        <option value="soprano">Soprano</option>
+    </select>
+
+    <label>Vocal Maturity</label>
+    <select id="maturity">
+        <option value="youthful">Youthful</option>
+        <option value="mature">Mature</option>
+        <option value="seasoned">Seasoned</option>
+        <option value="vintage">Vintage</option>
+    </select>
+
+    <label>Tone</label>
+    <select id="tone">
+        <option value="warm">Warm</option>
+        <option value="bright">Bright</option>
+        <option value="deep">Deep</option>
+        <option value="clear">Clear</option>
+    </select>
+
+    <label>Texture</label>
+    <select id="texture">
+        <option value="smooth">Smooth</option>
+        <option value="husky">Husky</option>
+        <option value="breathy">Breathy</option>
+        <option value="powerful">Powerful</option>
+    </select>
+
+    <label>Emotion</label>
+    <select id="emotion">
+        <option value="romantic">Romantic</option>
+        <option value="sad">Sad</option>
+        <option value="powerful">Powerful</option>
+        <option value="spiritual">Spiritual</option>
+    </select>
+
+
+    <button onclick="generatePrompt()">
+        Generate Vocal Prompt
+    </button>
+    <button onclick="resetForm()">
+    Reset
+</button>
+
+
+    <textarea id="result" placeholder="Your vocal prompt will appear here..."></textarea>
+
+    <button onclick="copyPrompt()">
+        Copy Prompt
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
