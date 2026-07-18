@@ -14,45 +14,74 @@
 
 <div class="card">
 
-<h1>🎵 AI Music Prompt Builder Pro</h1>
+    <h1>🎵 AI Music Prompt Builder Pro</h1>
 
-<h3>Professional Edition</h3>
+    <h3>Professional Edition by fatur62</h3>
 
-<p>Version 1.0</p>
+    <p>Version 1.1</p>
 
-<hr>
+    <hr>
 
-<h2>🎵 Genre Musik</h2>
-<div id="genreContainer"></div>
+    <h2>🎵 Genre Musik</h2>
+    <div id="genreContainer"></div>
 
-<hr>
+    <hr>
 
-<h2>😊 Mood</h2>
+    <h2>😊 Mood</h2>
+    <div id="moodContainer"></div>
 
-<div id="moodContainer"></div>
+    <hr>
 
-<hr>
-<h2>🎸 Instrument</h2>
+    <h2>🎸 Instrument</h2>
+    <div id="instrumentContainer"></div>
 
-<div id="instrumentContainer"></div>
-<hr>
+    <hr>
 
-<h2>🎨 Sound Character</h2>
+    <h2>🎨 Sound Character</h2>
+    <div id="soundCharacterContainer"></div>
 
-<div id="soundCharacterContainer"></div>
+    <hr>
 
-<div id="soundCharacterContainer"></div>
-<button id="generateBtn">
-🚀 Generate Prompt
-</button>
-<div id="hasil"></div>
+    <h2>🎤 Vocal Gender</h2>
 
-<button id="copyBtn">📋 Salin Prompt</button>
+    <div class="radio-group">
+
+        <label>
+            <input type="radio" name="gender" value="Male Vocal" checked>
+            Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="Female Vocal">
+            Female
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="Male & Female Duet">
+            Duet
+        </label>
+
+    </div>
+
+    <hr>
+
+    <button id="generateBtn">
+        🚀 Generate Prompt
+    </button>
+
+    <div id="hasil"></div>
+
+    <button id="copyBtn">
+        📋 Salin Prompt
+    </button>
+
 </div>
+
 <script src="data/genre.js"></script>
 <script src="data/mood.js"></script>
 <script src="data/instrument.js"></script>
 <script src="data/soundcharacter.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
