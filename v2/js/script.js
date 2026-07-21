@@ -71,3 +71,11 @@ document.getElementById("copyBtn")
 document.getElementById("clearBtn")
 .addEventListener("click", clearPrompt);
 }
+document.getElementById("generateBtn")
+.addEventListener("click", generatePrompt);
+
+document.getElementById("copyBtn")
+.addEventListener("click", copyPrompt);
+
+document.getElementById("clearBtn")
+.addEventListener("click", clearPrompt);
