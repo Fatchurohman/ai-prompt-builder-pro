@@ -2,45 +2,110 @@ const instrumentList = [
 
 "Select Instrument",
 
-// Modern
+// Modern Instruments
 "Piano",
+"Electric Piano",
 "Acoustic Guitar",
 "Electric Guitar",
 "Bass Guitar",
 "Drum Kit",
+"Synth Pad",
+"Synth Lead",
+"Organ",
 
-// Orchestra
+// Orchestra Instruments
 "Violin",
+"Viola",
 "Cello",
+"Double Bass",
 "String Ensemble",
-"Flute",
+"Trumpet",
 "Saxophone",
+"Clarinet",
+"Flute",
+"Oboe",
+"French Horn",
 
-// Indonesia
+// Percussion
+"Conga",
+"Bongo",
+"Tambourine",
+"Shaker",
+"Hand Percussion",
+
+// Indonesia - Jawa
 "Kendang Jawa",
 "Gamelan Jawa",
-"Suling Jawa",
+"Gong Ageng",
 "Bonang",
 "Saron",
+"Gender",
+"Slenthem",
+"Gambang",
+"Suling Jawa",
+
+// Indonesia - Sunda
 "Angklung",
+"Kendang Sunda",
 "Kacapi Sunda",
+"Suling Sunda",
+"Calung",
+
+// Indonesia - Bali
+"Gamelan Bali",
+"Gangsa Bali",
 "Rindik Bali",
-"Kolintang",
+"Kendang Bali",
+"Ceng-ceng",
+
+// Indonesia - Sumatera
+"Talempong Minangkabau",
+"Saluang",
+"Gondang Batak",
+"Taganing",
+"Serunai Melayu",
+
+// Indonesia - Nusantara
+"Sasando",
 "Tifa Papua",
-"Sasando"
+"Kolintang",
+"Rebana",
+"Gambus",
+
+// World Instruments
+"Sitar India",
+"Tabla",
+"Dhol",
+"Oud",
+"Duduk",
+"Shamisen",
+"Erhu"
 
 ];
 
-const instrumentSelect=document.getElementById("instrument");
+const instrumentContainer = document.getElementById("instrumentList");
 
-instrumentList.forEach(item=>{
 
-const option=document.createElement("option");
+instrumentList.forEach(item => {
 
-option.value=item;
+    const label = document.createElement("label");
 
-option.textContent=item;
+    const checkbox = document.createElement("input");
 
-instrumentSelect.appendChild(option);
+    checkbox.type = "checkbox";
+
+    checkbox.value = item;
+
+    checkbox.className = "instrument-check";
+
+
+    label.appendChild(checkbox);
+
+    label.appendChild(
+        document.createTextNode(" " + item)
+    );
+
+
+    instrumentContainer.appendChild(label);
 
 });
