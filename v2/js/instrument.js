@@ -1,31 +1,33 @@
-const instrumentList=[
+const instrumentList = [
 
 "Select Instrument",
 
+// Modern
 "Piano",
 "Acoustic Guitar",
 "Electric Guitar",
 "Bass Guitar",
-"Ukulele",
+"Drum Kit",
 
+// Orchestra
 "Violin",
 "Cello",
-"Orchestra Strings",
-
+"String Ensemble",
 "Flute",
 "Saxophone",
-"Trumpet",
 
-"Kendang",
-"Gamelan",
-"Seruling Bambu",
-
-"Drums",
-"808 Bass",
-
-"Synth",
-"Pad",
-"Arpeggiator"
+// Indonesia
+"Kendang Jawa",
+"Gamelan Jawa",
+"Suling Jawa",
+"Bonang",
+"Saron",
+"Angklung",
+"Kacapi Sunda",
+"Rindik Bali",
+"Kolintang",
+"Tifa Papua",
+"Sasando"
 
 ];
 
