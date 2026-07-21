@@ -2,7 +2,16 @@ function generatePrompt() {
 
     let genre = document.getElementById("genre").value;
     let mood = document.getElementById("mood").value;
-    let instrument = document.getElementById("instrument").value;
+   let instruments = [];
+
+document.querySelectorAll(".instrument-check:checked")
+.forEach(item => {
+
+    instruments.push(item.value);
+
+});
+
+let instrument = instruments.join(", ");
     let sound = document.getElementById("sound").value;
     let vocal = document.getElementById("vocal").value;
     let bpm = document.getElementById("bpm").value;
