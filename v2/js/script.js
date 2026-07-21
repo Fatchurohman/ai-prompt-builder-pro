@@ -63,5 +63,12 @@ function updateCounter(){
 
     document.getElementById("counter").innerHTML =
     text.length + " / 1000 characters";
+document.getElementById("generateBtn")
+.addEventListener("click", generatePrompt);
 
+document.getElementById("copyBtn")
+.addEventListener("click", copyPrompt);
+
+document.getElementById("clearBtn")
+.addEventListener("click", clearPrompt);
 }
