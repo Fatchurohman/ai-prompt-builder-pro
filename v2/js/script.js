@@ -56,7 +56,6 @@ function clearPrompt() {
 }
 
 
-
 function updateCounter(){
 
     let text = document.getElementById("result").value;
