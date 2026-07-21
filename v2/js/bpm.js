@@ -10,3 +10,16 @@ const bpmList = [
     140,
     160
 ];
+const bpmSelect = document.getElementById("bpm");
+
+bpmList.forEach(item => {
+
+    const option = document.createElement("option");
+
+    option.value = item;
+
+    option.textContent = item;
+
+    bpmSelect.appendChild(option);
+
+});
