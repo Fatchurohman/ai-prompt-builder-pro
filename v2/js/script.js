@@ -79,7 +79,7 @@ function exportPrompt() {
     document.body.removeChild(link);
 
     URL.revokeObjectURL(link.href);
-
+alert("Prompt exported successfully!");
 }
 function updateCounter(){
 
