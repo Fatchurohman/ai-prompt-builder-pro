@@ -55,7 +55,32 @@ function clearPrompt() {
     updateCounter();
 }
 
+function exportPrompt() {
 
+    const text = document.getElementById("result").value;
+
+    if (text.trim() === "") {
+        alert("Please generate a prompt first!");
+        return;
+    }
+
+    const blob = new Blob([text], { type: "text/plain" });
+
+    const link = document.createElement("a");
+
+    link.href = URL.createObjectURL(blob);
+
+    link.download = "FaturSky_Music_Prompt.txt";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+
+    URL.revokeObjectURL(link.href);
+
+}
 function updateCounter(){
 
     let text = document.getElementById("result").value;
