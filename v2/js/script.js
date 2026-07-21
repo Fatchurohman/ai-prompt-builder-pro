@@ -12,6 +12,11 @@ document.querySelectorAll(".instrument-check:checked")
 });
 
 let instrument = instruments.join(", ");
+    if (instrument === "") {
+
+    instrument = "No instrument selected";
+
+}
     let sound = document.getElementById("sound").value;
     let vocal = document.getElementById("vocal").value;
     let bpm = document.getElementById("bpm").value;
