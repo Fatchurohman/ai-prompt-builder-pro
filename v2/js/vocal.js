@@ -29,4 +29,18 @@ const vocalList = [
         type: "Mezzo Soprano",
         character: "Rich powerful female mezzo vocal"
     }
-];
+];const vocalSelect = document.getElementById("vocal");
+
+vocalList.forEach(item => {
+
+    const option = document.createElement("option");
+
+    option.value = item.character;
+
+    option.textContent = item.gender + " - " + item.type;
+
+    vocalSelect.appendChild(option);
+
+});
+
+
