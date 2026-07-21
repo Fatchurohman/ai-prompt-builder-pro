@@ -104,3 +104,5 @@ document.getElementById("copyBtn")
 
 document.getElementById("clearBtn")
 .addEventListener("click", clearPrompt);
+document.getElementById("exportBtn")
+.addEventListener("click", exportPrompt);
