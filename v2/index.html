@@ -1,9 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI Prompt Builder Pro v2.0</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>AI Prompt Builder Pro v2.0</h1>
+
+<header class="header">
+
+    <h1>AI Prompt Builder Pro</h1>
+
+    <h2>Version 2.0</h2>
+
+    <h3>Professional Edition</h3>
+
+    <p class="developer">
+        Developed by <strong>Fatur Sky</strong>
+    </p>
+
+    <p class="subtitle">
+        Create World-Class Music Prompts for Suno AI
+    </p>
+
+</header>
+
+<main>
+
+<section class="builder">
+
+<h2>Prompt Builder</h2>
+
+<div class="grid">
+
+<div class="item">
+<label>Genre</label>
+<select id="genre"></select>
+</div>
+
+<div class="item">
+<label>Mood</label>
+<select id="mood"></select>
+</div>
+
+<div class="item">
+<label>Instrument</label>
+<select id="instrument"></select>
+</div>
+
+<div class="item">
+<label>Sound Character</label>
+<select id="sound"></select>
+</div>
+
+<div class="item">
+<label>Vocal</label>
+<select id="vocal"></select>
+</div>
+
+<div class="item">
+<label>BPM</label>
+<select id="bpm"></select>
+</div>
+
+</div>
+
+</section>
+
+<section class="result">
+
+<h2>Generated Prompt</h2>
+
+<textarea
+id="result"
+placeholder="Your generated prompt will appear here..."
+></textarea>
+
+<div class="buttons">
+
+<button id="generateBtn">
+Generate Prompt
+</button>
+
+<button id="copyBtn">
+Copy
+</button>
+
+<button id="clearBtn">
+Clear
+</button>
+
+<button id="exportBtn">
+Export
+</button>
+
+</div>
+
+<p id="counter">
+0 / 1000 Characters
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 AI Prompt Builder Pro v2.0
+</p>
+
+</footer>
+
+<script src="js/genre.js"></script>
+<script src="js/instrument.js"></script>
+<script src="js/mood.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/vocal.js"></script>
+<script src="js/bpm.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
