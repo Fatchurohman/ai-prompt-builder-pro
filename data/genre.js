@@ -15,5 +15,6 @@ const genreList = [
     "Bossanova"
     "Slow Rock"
     "Campursari"
+    "Slow Rock"
 
 ];
