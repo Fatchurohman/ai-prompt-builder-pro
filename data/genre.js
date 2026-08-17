@@ -12,5 +12,8 @@ const genreList = [
     "RnB",
     "Blues",
     "Rock"
+    "Bossanova"
+    "Slow Rock"
+    "Campursari"
 
 ];
